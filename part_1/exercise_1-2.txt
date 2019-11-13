@@ -1,0 +1,9 @@
+Script started on 2019-11-13 21:57:18+0000
+]0;root@ip-172-31-20-228:/home/ec2-user/proyectos/cursoDocker/devOpsWithDocker/part_1[?1034h[root@ip-172-31-20-228 part_1]# docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+]0;root@ip-172-31-20-228:/home/ec2-user/proyectos/cursoDocker/devOpsWithDocker/part_1[root@ip-172-31-20-228 part_1]# docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+]0;root@ip-172-31-20-228:/home/ec2-user/proyectos/cursoDocker/devOpsWithDocker/part_1[root@ip-172-31-20-228 part_1]# exit
+exit
+
+Script done on 2019-11-13 21:57:42+0000
