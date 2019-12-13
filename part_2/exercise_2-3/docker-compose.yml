@@ -1,0 +1,14 @@
+version: '3.5' 
+
+services: 
+    backend-example-docker:
+      build: . 
+      container_name: backend-example-docker
+      ports: 
+        - 8000:8000 
+    
+    frontend-example-docker:
+      build: . 
+      container_name: frontend-example-docker
+      ports: 
+        - 5000:5000 
