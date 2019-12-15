@@ -10,8 +10,6 @@ services:
       build: ./frontend
       ports:
         - 5000:5000
-      environment:
-        - VIRTUAL_HOST=compute.localtest.me
   cache:
       image: redis:5.0.7
       ports:
