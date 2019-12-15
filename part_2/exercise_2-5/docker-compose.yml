@@ -1,0 +1,18 @@
+version: '3.2'
+services:
+  backend:
+      build: ./backend
+      ports:
+        - 8000:8000
+      environment:
+      - REDIS=cache
+  frontend:
+      build: ./frontend
+      ports:
+        - 5000:5000
+      environment:
+        - VIRTUAL_HOST=compute.localtest.me
+  cache:
+      image: redis:5.0.7
+      ports:
+        - 6379:6379
