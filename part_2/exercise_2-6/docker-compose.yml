@@ -1,0 +1,28 @@
+version: '3.2'
+services:
+  backend:
+      build: ./backend
+      ports:
+        - 8000:8000
+      environment:
+        - REDIS=cache
+        - DB_HOST=database
+        - DB_NAME=mydatabase
+        - DB_USERNAME=dbname
+        - DB_PASSWROD=password
+      depends_on:
+        - database
+  frontend:
+      build: ./frontend
+      ports:
+        - 5000:5000
+  cache:
+      image: redis:5.0.7
+      ports:
+        - 6379:6379
+  database:
+      image: postgres
+      restart: unless-stopped
+      environment:
+        - POSTGRES_PASSWORD=password
+        
