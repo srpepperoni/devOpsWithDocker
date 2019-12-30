@@ -1,11 +1,14 @@
 FROM ubuntu:16.04
 
 WORKDIR /mydir
-RUN apt-get update && apt-get install -y git && apt-get install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
-RUN apt install -y nodejs
-RUN git clone https://github.com/docker-hy/backend-example-docker
-RUN cd backend-example-docker && npm install
+RUN apt-get update && apt-get install -y git && apt-get install -y curl && \
+curl -sL https://deb.nodesource.com/setup_10.x | bash && \
+apt install -y nodejs && \
+git clone https://github.com/docker-hy/backend-example-docker && \
+apt-get purge -y --auto-remove curl && \
+apt-get purge -y --auto-remove git && \
+rm -rf /var/lib/apt/lists/* && \
+cd backend-example-docker && npm install
 
 EXPOSE 8000
 
