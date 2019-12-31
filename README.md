@@ -1,5 +1,5 @@
 # DevOps with Docker
-Exercises solved for course by Jami Kousa
+Exercises solved for the course DevOps with Docker by Jami Kousa
 
 ## Part 1
 
