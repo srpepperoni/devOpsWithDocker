@@ -10,8 +10,8 @@
 - [x] [Exercise 2.6](https://github.com/srpepperoni/devOpsWithDocker/tree/master/part_2/exercise_2-6)
 - [x] [Exercise 2.7](https://github.com/srpepperoni/devOpsWithDocker/tree/master/part_2/exercise_2-7)
 - [x] [Exercise 2.8](https://github.com/srpepperoni/devOpsWithDocker/tree/master/part_2/exercise_2-8)
-- [ ] [Exercise 2.9](https://github.com/srpepperoni/devOpsWithDocker/tree/master/part_2/exercise_2-9)
-- [ ] [Exercise 2.10](https://github.com/srpepperoni/devOpsWithDocker/tree/master/part_2/exercise_2-10)
+- [ ] Exercise 2.9
+- [ ] Exercise 2.10
 
 ## Description
 
