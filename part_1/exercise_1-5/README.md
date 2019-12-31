@@ -4,7 +4,7 @@
 
 ```
 Script started on 2019-12-03 10:14:59+0000
-]0;root@ip-172-31-20-228:/home/ec2-user/proyectos/cursoDocker/devOpsWithDocker/part_1[?1034h[root@ip-172-31-20-228 part_1]# docker run -it --name exercise1_4 ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$websit 
+[root@ip-172-31-20-228 part_1]# docker run -it --name exercise1_4 ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$websit 
 e;'
 Unable to find image 'ubuntu:latest' locally
 latest: Pulling from library/ubuntu
@@ -30,7 +30,7 @@ Script done on 2019-12-03 10:17:55+0000
 
 ## Terminal 2
 
-´´´
+```
 Script started on 2019-12-03 10:16:20+0000
 [root@ip-172-31-20-228 part_1]# docker ps
 CONTAINER ID        IMAGE               COMMAND                   CREATED             STATUS              PORTS               NAMES
@@ -54,7 +54,7 @@ Need to get 4834 kB of archives.
 After this operation, 14.8 MB of additional disk space will be used.
 Do you want to continue? [Y/n] y
 0% [Working]
-Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libssl1.1 amd64 1.1.1-1ubuntu2.1~18.04.5 [1300 kB]...                                    
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libssl1.1 amd64 1.1.1-1ubuntu2.1~18.04.5 [1300 kB]                                  
 100% [Working]       
 Fetched 4834 kB in 0s (9691 kB/s)
 debconf: delaying package configuration, since apt-utils is not installed
@@ -63,6 +63,6 @@ Selecting previously unselected package libssl1.1:amd64.
 (Reading database ... 5%
 (Reading database ... 100%
 (Reading database ... 4046 files and directories currently installed.)
-Preparing to unpack .../00-libssl1.1_1.1.1-1ubuntu2.1~18.04.5_amd64.deb ...
+Preparing to unpack .../00-libssl1.1_1.1.1-1ubuntu2.1~18.04.5_amd64.deb
 Setting 
-´´´
+```
