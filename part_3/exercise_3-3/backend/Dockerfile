@@ -8,9 +8,13 @@ git clone https://github.com/docker-hy/backend-example-docker && \
 apt-get purge -y --auto-remove curl && \
 apt-get purge -y --auto-remove git && \
 rm -rf /var/lib/apt/lists/* && \
-cd backend-example-docker && npm install
+cd backend-example-docker && npm install && \
+useradd -m app && \
+chown -R app:app /mydir
+
+USER app
 
 EXPOSE 8000
 
 ENV FRONT_URL=http://localhost:5000
-CMD ["npm","start","--prefix","backend-example-docker/"]
+ENTRYPOINT ["npm","start","--prefix","backend-example-docker/"]

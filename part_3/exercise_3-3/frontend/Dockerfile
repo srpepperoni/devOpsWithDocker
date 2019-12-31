@@ -8,7 +8,11 @@ git clone https://github.com/docker-hy/frontend-example-docker && \
 apt-get purge -y --auto-remove curl && \
 apt-get purge -y --auto-remove git && \
 rm -rf /var/lib/apt/lists/* && \
-cd frontend-example-docker && npm install && npm run build
+cd frontend-example-docker && npm install && npm run build && \
+useradd -m app && \
+chown -R app:app /mydir
+
+USER app
 
 EXPOSE 5000
 
