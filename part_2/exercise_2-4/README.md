@@ -1,3 +1,9 @@
+# Exercise 2.4
+
+We need to launch 'compute' service at least twice.
+docker-compose up --scale compute=2
+
+```yaml
 version: '3.5'
 services:
   calculator:
@@ -19,3 +25,4 @@ services:
       ports:
         - 80:80
       container_name: load-balancer
+```

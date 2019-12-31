@@ -1,2 +1,0 @@
-We need to laun 'compute' service at least twice.
-docker-compose up --scale compute=2
