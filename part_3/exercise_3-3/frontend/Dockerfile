@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y git && apt-get install -y curl && apt-g
 curl -sL https://deb.nodesource.com/setup_10.x | bash && \
 apt install -y nodejs && \
 git clone https://github.com/docker-hy/frontend-example-docker && \
+npm update caniuse-lite browserlist && \
 apt-get purge -y --auto-remove curl && \
 apt-get purge -y --auto-remove git && \
 rm -rf /var/lib/apt/lists/* && \

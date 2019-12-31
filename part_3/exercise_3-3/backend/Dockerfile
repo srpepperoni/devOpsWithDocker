@@ -17,4 +17,4 @@ USER app
 EXPOSE 8000
 
 ENV FRONT_URL=http://localhost:5000
-ENTRYPOINT ["npm","start","--prefix","backend-example-docker/"]
+CMD ["npm","start","--prefix","backend-example-docker/"]
