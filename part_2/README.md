@@ -15,6 +15,6 @@
 
 ## Description
 
-I deliver every single exercise with [script linux command](http://man7.org/linux/man-pages/man1/script.1.html), to ensure that I truly send what really happens in my machine.
+I delivered every single exercise with [script linux command](http://man7.org/linux/man-pages/man1/script.1.html), to ensure that I truly send what really happens in my machine.
 
 For a cleaner revision of this script files I had to manually fix some encoding issues. I hope that everything appears fine.
