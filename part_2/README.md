@@ -10,7 +10,7 @@
 - :heavy_check_mark: [Exercise 2.6](https://github.com/srpepperoni/devOpsWithDocker/tree/master/part_2/exercise_2-6)
 - :heavy_check_mark: [Exercise 2.7](https://github.com/srpepperoni/devOpsWithDocker/tree/master/part_2/exercise_2-7)
 - :heavy_check_mark: [Exercise 2.8](https://github.com/srpepperoni/devOpsWithDocker/tree/master/part_2/exercise_2-8)
-- :heavy_multiplication_x: Exercise 2.9
+- :heavy_check_mark: [Exercise 2.9](https://github.com/srpepperoni/devOpsWithDocker/tree/master/part_2/exercise_2-9)
 - :heavy_multiplication_x: Exercise 2.10
 
 ## Description
