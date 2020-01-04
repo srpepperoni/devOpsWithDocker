@@ -1,5 +1,7 @@
 # Exercise 1.10
 
+## Dockerfile
+
 ```
 FROM ubuntu:16.04
 
@@ -14,6 +16,15 @@ EXPOSE 5000
 
 CMD ["npm","start","--prefix","frontend-example-docker/"]
 
+```
+
+## Commands
+
+This commands were wrote from Dockerfile directory.
+
+```
+$>docker build -t exercise10 .
+$>docker run -d -p 5000:5000 exercise10
 
 ```
 
