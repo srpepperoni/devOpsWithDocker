@@ -35,6 +35,17 @@ EXPOSE 5000
 ENV API_URL=http://localhost:8000
 CMD ["npm","start","--prefix","frontend-example-docker/"]
 
+```
 
+## Commands
+
+The following commands were executed from its Dockerfiles directories.
+
+```
+$>docker build -t back .
+$>docker build -t front .
+
+$>docker run -d -p 8000:8000 back
+$>docker run -d -p 5000:5000 front
 ```
 
