@@ -29,6 +29,9 @@ services:
         restart: always
         environment:
             POSTGRES_PASSWORD: root
+            PGDATA: /database/postgres/data
+        volumes:
+            - postgres:/database/postgres/data
     nginx:
         image: nginx
         restart: always
@@ -42,4 +45,6 @@ services:
         depends_on:
             - frontend
             - backend
+volumes:
+  postgres:
 ```
